@@ -1,6 +1,6 @@
 {
   "name": "clear-notifications",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Clears all notifications from the notification center",
   "scripts": {
     "pre-commit": "./release-update.sh",
