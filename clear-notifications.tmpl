@@ -1,0 +1,15 @@
+#!/bin/sh
+if [ "$1" = "--version" ] || [ "$1" = "-v" ]; then
+  echo "{{version}}"
+  exit 0
+fi
+if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
+  echo "Usage: clear-notifications"
+  echo "Clears all notifications."
+  echo "Options:"
+  echo "  --version, -v  Show version number"
+  echo "  --help, -h     Show help"
+  exit 0
+fi
+SCRIPT_DIR=$(dirname "$(realpath "$0")")
+osascript "$SCRIPT_DIR/clear-notifications.applescript"
